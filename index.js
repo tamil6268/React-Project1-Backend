@@ -16,6 +16,8 @@ const foodTopPost=require('./Routes/Top-Post/food');
 const hollywoodTopPost=require('./Routes/Top-Post/hollywood');
 const technologyTopPost=require('./Routes/Top-Post/technology');
 const homeTopPost=require('./Routes/Top-Post/home');
+const homeSinglePic=require('./Routes/Top-Post/homeSinglePic');
+const home4Pic=require('./Routes/Top-Post/home4Pic');
 //using files
 app.use(cors());
 app.use('/',bollywood);
@@ -31,6 +33,8 @@ app.use('/',foodTopPost);
 app.use('/',hollywoodTopPost);
 app.use('/',technologyTopPost);
 app.use('/',homeTopPost);
+app.use('/',homeSinglePic);
+app.use('/',home4Pic);
 //listening the port
 app.listen(PORT,()=>{
     console.log(`Server Started in Port http://localhost:${PORT}`)
